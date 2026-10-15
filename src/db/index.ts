@@ -1,5 +1,6 @@
 import { drizzle } from 'drizzle-orm/node-postgres'
 import pg from 'pg'
+import * as schema from './schema.js'
 import 'dotenv/config'
 
 if (!process.env.DATABASE_URL) {
@@ -20,13 +21,13 @@ pool.on('error', (error) => {
   console.error('Unexpected error on idle database client', error)
 })
 
-export const db = drizzle(pool)
+export const db = drizzle(pool, { schema })
 
-export const checkConnection = async () => {
+export const checkConnection = async (): Promise<void> => {
   const client = await pool.connect()
   client.release()
 }
 
-export const closeConnection = async () => {
+export const closeConnection = async (): Promise<void> => {
   await pool.end()
 }

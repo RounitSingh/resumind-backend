@@ -1,0 +1,62 @@
+{
+  "version": "7",
+  "dialect": "postgresql",
+  "entries": [
+    {
+      "idx": 0,
+      "version": "7",
+      "when": 1792002632623,
+      "tag": "0000_busy_kat_farrell",
+      "breakpoints": true
+    },
+    {
+      "idx": 1,
+      "version": "7",
+      "when": 1792032529172,
+      "tag": "0001_drop_users",
+      "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "7",
+      "when": 1792035224561,
+      "tag": "0002_reshape_schema",
+      "breakpoints": true
+    },
+    {
+      "idx": 3,
+      "version": "7",
+      "when": 1792035260447,
+      "tag": "0003_drop_legacy_jd_columns",
+      "breakpoints": true
+    },
+    {
+      "idx": 4,
+      "version": "7",
+      "when": 1792047968209,
+      "tag": "0004_review_step",
+      "breakpoints": true
+    },
+    {
+      "idx": 5,
+      "version": "7",
+      "when": 1792051688083,
+      "tag": "0005_auth_users",
+      "breakpoints": true
+    },
+    {
+      "idx": 6,
+      "version": "7",
+      "when": 1792052971823,
+      "tag": "0006_drop_auth",
+      "breakpoints": true
+    },
+    {
+      "idx": 7,
+      "version": "7",
+      "when": 1792058261533,
+      "tag": "0007_auth_users",
+      "breakpoints": true
+    }
+  ]
+}
